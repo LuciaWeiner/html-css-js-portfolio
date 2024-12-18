@@ -67,3 +67,86 @@ a:hover {
 .logo:hover {
     cursor: default;
 }
+
+/* Hamburger Menu */
+
+#hamburger-nav {
+    display: none; /*not show up in desktop*/
+}
+
+/* creating hamburger menu class */
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+/* targeting each link within menu links */
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+/* list elements inside menu links */
+.menu-links li {
+    list-style: none; /*removes bullet points */
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+/* Hamburger Menu to X visual */
+
+/* span elements on open */
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0; /*removing the second line */
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/*span elements when hamburger icon is closed */
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:nth-child(2){
+    opacity: 1;
+}
+.hamburger-icon span:last-child{
+    transform: none;
+}
