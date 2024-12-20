@@ -270,14 +270,15 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    /*flex-wrap: wrap;*/
 }
 
-.about-details-container {
+.about-details-containers {
     justify-content: center;
     flex-direction: column;
 }
 
-.about-containers, .about-details-container {
+.about-containers, .about-details-containers {
     display: flex;
 }
 
@@ -322,10 +323,10 @@ section {
     margin-bottom: 1rem;
 }
 
-.experience-details-container {
+.experience-details-containers {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .article-container {
@@ -350,7 +351,7 @@ section {
     display: flex;
     gap: 0.5rem;
     width: 100%;
-    
+
 }
 
 article {
@@ -361,4 +362,90 @@ article {
 
 article .icon {
     cursor: default;
+}
+
+/* Project Section */
+
+.article-container.project img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163,163,163);
+    background: rgb(250,250,250);
+    margin: 1rem;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn {
+    color: white;
+    border-color: rgb(163,163,163);
+}
+
+/* Contact */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    background: (250,250,250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+/*Footer section */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+    margin: .5rem;
 }
