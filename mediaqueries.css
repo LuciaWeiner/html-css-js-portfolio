@@ -4,10 +4,22 @@
         margin-bottom: 6rem;
     }
 
+    /* .about-containers {
+        flex-wrap: wrap;
+    } */
+}
+
+@media screen and (max-width: 1100px){
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
     .about-containers {
         flex-wrap: wrap;
     }
 }
+
 
 
 
