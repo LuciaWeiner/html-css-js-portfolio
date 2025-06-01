@@ -178,11 +178,15 @@ section {
     display:flex;
     height: 400px;
     width: 400px;
+    justify-content: center;
     margin: auto 0;
 }
 
 .section__pic-container img {
     border-radius: 2rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .section__text {
@@ -289,6 +293,11 @@ section {
 
 .about-containers, .about-details-containers {
     display: flex;
+}
+
+.about-details-containers .text-container p {
+    text-align: left;
+    line-height: 1.6;
 }
 
 .arrow {
