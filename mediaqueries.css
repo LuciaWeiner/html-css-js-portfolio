@@ -9,6 +9,14 @@
     } */
 }
 
+@media screen and (min-width: 1201px) {
+    .about-section__pic-container {
+        width: 275px; /* Min of fixed px or % of viewport width */
+        height: 275px;
+        margin: 0 auto 1rem;
+    }
+}
+
 @media screen and (max-width: 1100px){
     #profile {
         height: 83vh;
@@ -19,9 +27,6 @@
         flex-wrap: wrap;
     }
 }
-
-
-
 
 @media screen and (max-width: 1200px){
     /* when the screen size is lower than 1200px the desktop nav doesn't show */
@@ -55,8 +60,8 @@
         margin: 0 auto 2rem;
     }
     .about-section__pic-container {
-        width: 275px;
-        height: 275px;
+        width: 300px;
+        height: 300px;
         margin: 0 auto 2rem;
     }
     .about-containers {
@@ -107,8 +112,10 @@
         justify-content: center;
     }
     .about-section__pic-container {
-        width: auto;
-        height: 46vw;
+        width: 40vw;
+        height: 40vw;
+        max-width: 300px; /* Prevent over-sizing on tiny screens */
+        max-height: 300px;
         justify-content: center;
     }
     .section__text__p2{
