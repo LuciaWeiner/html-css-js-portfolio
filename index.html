@@ -1,263 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucia Weiner | Trading Analytics &amp; Industrial and Systems Engineering</title>
+  <meta name="description" content="Lucia Weiner: Industrial and Systems Engineering student at the University of Florida and crude trading intern at ExxonMobil Global Trading, turning market data into trading decisions.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lucia Weiner | Trading Analytics">
+  <meta property="og:description" content="Turning market data into trading decisions. ISE student at UF, ExxonMobil Global Trading intern.">
+  <meta property="og:url" content="https://luciaweiner.com/">
+  <meta property="og:image" content="https://luciaweiner.com/assets/headshot-1200.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0f1b2d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Lucia Weiner</div>
-        <div>
-            <!-- creating the navigation bar each part will link to its section-->
-            <ul class="nav-links"> 
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#top" class="logo" aria-label="Lucia Weiner, back to top">
+        <span class="logo-mark">LW</span><span class="logo-text">LUCIA WEINER</span>
+      </a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-orange btn-sm" href="./assets/LuciaWeinerResume2026.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
     </nav>
+  </header>
 
-    <nav id="hamburger-nav">
-        <div class="logo">Lucia Weiner</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <!-- lines of hamburger menu -->
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-text fade">
+        <p class="eyebrow">Trading analytics · Industrial &amp; Systems Engineering</p>
+        <h1>Lucia Weiner</h1>
+        <p class="hero-sub">I turn market data into trading decisions.</p>
+        <p class="hero-bio">Industrial and Systems Engineering student at the University of Florida and crude trading intern at ExxonMobil Global Trading, building forecasts, data pipelines and tools that help traders read supply and demand faster.</p>
+        <div class="btn-row">
+          <a class="btn btn-black" href="#experience">View experience</a>
+          <a class="btn btn-outline" href="#contact">Get in touch</a>
         </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/HeadShot.JPG" alt="Lucia Weiner profile picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm </p>
-            <h1 class="title">
-                <span class="typing-text"></span>
-            </h1>
-            <p class="section__text__p2">Industrial and Systems Engineering and Computer Science Student</p>
-            <div class="btn-container">
-                <!-- opens the resume in a new window-->
-                <button class="btn btn-color-2" onclick="window.open('./assets/LuciaWeinerResume2025.pdf')">Download Resume</button>
-                <!-- will send to contact section of the website-->
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/lucia-weiner/'">
-                <img src="./assets/github.png" alt="My Github profile"
-                class="icon" onclick="location.href='https://github.com/LuciaWeiner'">
-            </div>
-        </div>
-        
+      </div>
+      <figure class="hero-photo fade">
+        <picture>
+          <source srcset="./assets/headshot-1200.webp" type="image/webp">
+          <img src="./assets/headshot-1200.jpg" alt="Portrait of Lucia Weiner" width="981" height="1200" fetchpriority="high">
+        </picture>
+        <figcaption><span>GAINESVILLE, FL</span><span>UF · CLASS OF 2028</span></figcaption>
+      </figure>
     </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <p class="title">About Me</p>
-        <div class="section-container">
-            <div class="about-section__pic-container">
-                <img src="./assets/Profile-Pic-Two.png" alt="Profile picture" class="about-pic">
-            </div>
-            <div class="about-details-containers">
-                <div class="about-containers">
-                    <div class="details-containers">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>Robotics Program Assistant <br>Solar Gators Strategy Engineer</p>
-                    </div>
-                    <div class="details-containers">
-                        <img src="./assets/education.png" alt="education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>Industrial and Systems Engineering (B.S) <br>Computer Science (Minor)</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Hi! My name is Lucia Weiner, and I'm an Industrial and Systems Engineering student at the University of Florida with an operations research / data analytics focus and minor in Computer Science. 
-                        I'm most actively involved within Theta Tau, a professional engineering organization, as a Professional Development Chair, and IISE and WiCSE as a Mentor for underclassmen. I'm most interested in the 
-                        intersection of industrial engineering and computer science, finding ways to utilize software to optimize systems. 
-                        
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+
+    <section class="stats" aria-label="Highlights">
+      <ul class="container stats-grid">
+        <li><strong>+40%</strong><span>Backtested strategy profit (2024), ~181% ahead of buy-and-hold S&amp;P 500</span></li>
+        <li><strong>10 hrs</strong><span>Monthly data work saved by automated Cushing forecasts</span></li>
+        <li><strong>&minus;89%</strong><span>Manual workload on crude export deal entry</span></li>
+        <li><strong>3.84</strong><span>GPA · B.S. ISE, CS minor</span></li>
+      </ul>
     </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-containers">
-            <div class="about-containers">
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Programming Languages</h2>
-                    <div class="article-container">
-                        <!--Each article is a skill in the experience-->
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>C++</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        
-                    </div>
-                </div>
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Practical Experience</h2>
-                    <div class="article-container practical">
-                        <!--Each article is a skill in the experience-->
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>UT Austin Program Assistant</h3>
-                                <p>Developed interactive robotics simulations in C++ using the Arduino IDE and orchestrated hands-on robotics
-                                    programming workshops</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>UF Solar Gators Racing Team Strategy Engineer</h3>
-                                <p>Created algorithms to process SVG files into curvature sampling for physics-based
-                                    modeling</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+
+    <section id="about" class="section container about">
+      <figure class="about-photo fade">
+        <picture>
+          <source srcset="./assets/headshot-1200.webp" type="image/webp">
+          <img src="./assets/headshot-1200.jpg" alt="Lucia Weiner" width="981" height="1200" loading="lazy">
+        </picture>
+      </figure>
+      <div class="about-text fade">
+        <p class="eyebrow">About</p>
+        <h2>Data, markets and decisions</h2>
+        <p>I'm an Industrial and Systems Engineering student at the University of Florida (minor in Computer Science, 3.84 GPA) who likes the point where data meets a trading decision.</p>
+        <p>At ExxonMobil Global Trading I work on the crude desk: forecasting Cushing inventory levels, ingesting weekly pipeline flow data from the Genscape API into Snowflake, and visualizing the supply/demand balance so traders can act faster. I also automated export deal entry with a validated, AI-assisted pipeline.</p>
+        <p>Before that, I led a team building an EMA and Bollinger Band trading strategy and backtested its signals on historical data. Outside of work, I'm the Professional Development Chair for Theta Tau, running resume reviews and interview prep for fellow engineers.</p>
+      </div>
     </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-containers">
-            <div class="about-containers">
-                <div class="details-containers color-container">
-                    <div class="article-container project">
-                        <img src="./assets/PostGradPonderin.png" alt="Post Grad Ponderin" class="project-img">
-                    
-                    </div>
-                    <h2 class="experience-sub-title project-title">Post Grad Ponderin</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mushroom12345678/PostGradPonderin'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/watch?v=0-3HUqVQjmI '">
-                            Live Demo
-                        </button>
-                        
-                    </div>
-                </div>
-                <div class="details-containers color-container">
-                    <div class="article-container project">
-                        <img src="./assets/BacktestingPicture.png" alt="Minesweeper game" class="project-img">
-                    
-                    </div>
-                    <h2 class="experience-sub-title project-title">Quantitative Trading Algorithm</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/LuciaWeiner/EMAsBollingerBands'">
-                            Github
-                        </button>
-                        <!-- button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Live Demo
-                        </button -->
-                        
-                    </div>
-                </div>
-                <div class="details-containers color-container">
-                    <div class="article-container project">
-                        <img src="./assets/plantcarousel.png" alt="Plant Carousel" class="project-img">
-                    
-                    </div>
-                    <h2 class="experience-sub-title project-title">Plant Carousel</h2>
-                    <div class="btn-container">
-                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Live Demo
-                        </button> -->
-                        
-                    </div>
-                </div>
-            </div>
+
+    <section id="experience" class="section container">
+      <p class="eyebrow">Experience</p>
+      <h2>Positions held</h2>
+      <div class="exp fade">
+        <div class="exp-table" role="list">
+          <div class="exp-head" aria-hidden="true"><span>Dates</span><span>Organization</span><span>Role</span><span>Impact</span></div>
+          <div id="exp-rows"></div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+        <aside class="exp-panel" id="exp-panel" aria-live="polite"></aside>
+      </div>
     </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:luciagweiner@gmail.com">luciagweiner@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/lucia-weiner/">LinkedIn</a></p>
-            </div>
-        </div>
+
+    <section id="projects" class="section container">
+      <p class="eyebrow">Projects &amp; research</p>
+      <h2>Selected work</h2>
+      <div class="cards">
+        <article class="card fade">
+          <p class="card-tag">Quant · Trading</p>
+          <h3>Financial Trading Strategy</h3>
+          <p>Led a team of four building a custom algorithm that used Exponential Moving Averages and Bollinger Bands to generate buy/sell signals, then backtested it on historical data.</p>
+          <div class="card-metrics"><span><strong>+40%</strong> backtested profit (2024)</span><span><strong>~181%</strong> vs buy-and-hold S&amp;P 500</span></div>
+          <p class="card-meta">Jan–May 2025</p>
+        </article>
+        <article class="card fade">
+          <p class="card-tag">AI · Retrieval</p>
+          <h3>AI Allergen Cooking Assistant</h3>
+          <p>A retrieval-augmented generation system that answers cooking questions from uploaded PDF cookbooks, using PDF chunking, embeddings and vector database queries for context-aware answers.</p>
+          <div class="card-metrics"><span>RAG</span><span>Embeddings</span><span>Vector DB</span></div>
+          <p class="card-meta">Jun 2025–Jan 2026</p>
+        </article>
+        <article class="card fade">
+          <p class="card-tag">Research · Published</p>
+          <h3>Wearable Sensor Framework</h3>
+          <p>Co-authored a paper on a wearable sensor framework for real-time health and human performance monitoring in operational environments.</p>
+          <div class="card-metrics"><span>IEEE Xplore</span><span>ICEdge 2025 special session</span></div>
+          <p class="card-meta">UF Human Performance &amp; Neuro-Engineering Lab</p>
+        </article>
+      </div>
     </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links"> 
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 Lucia Weiner</p>
-    </footer>
-    <script src="script.js"></script>
+
+    <section id="toolkit" class="section container">
+      <p class="eyebrow">Toolkit</p>
+      <h2>Skills &amp; honors</h2>
+      <div class="skills fade">
+        <div class="skill-group"><h3>Markets &amp; Analytics</h3><ul><li>Crude supply/demand balances</li><li>Inventory forecasting</li><li>Backtesting</li><li>Trading signals (EMA, Bollinger Bands)</li></ul></div>
+        <div class="skill-group"><h3>Quantitative</h3><ul><li>Numerical methods</li><li>Linear algebra</li><li>Data analysis</li><li>Discrete mathematics</li></ul></div>
+        <div class="skill-group"><h3>Data</h3><ul><li>Databricks</li><li>Snowflake</li><li>Genscape API</li><li>Data validation pipelines</li></ul></div>
+        <div class="skill-group"><h3>Programming</h3><ul><li>Python</li><li>React / TypeScript</li><li>MATLAB</li><li>Java, C/C++</li></ul></div>
+        <div class="skill-group honors"><h3>Honors</h3><ul><li>President's Honor Roll</li><li>Dean's List</li><li>UF Distinguished Scholar Merit Award</li></ul></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="contact">
+    <div class="container">
+      <p class="eyebrow light">Contact</p>
+      <h2>Let's connect.</h2>
+      <p class="contact-sub">Open to conversations about trading, analytics and energy markets.</p>
+      <div class="btn-row">
+        <a class="btn btn-orange" href="mailto:luciagweiner@gmail.com">luciagweiner@gmail.com</a>
+        <a class="btn btn-outline-light" href="https://www.linkedin.com/in/lucia-weiner/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="footer-bar"><span>&copy; <span id="year">2026</span> Lucia Weiner</span><span>Gainesville, FL</span></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
